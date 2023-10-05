@@ -1,8 +1,10 @@
 #include<stdio.h>
-/*
- * print() won't be used in favour of puts()
- * main() a normal and beautiful
+/**
+ * main -  A program that prints using puts function
+ * Description: 'the program's description'
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
