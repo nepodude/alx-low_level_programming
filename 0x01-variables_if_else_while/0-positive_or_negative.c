@@ -1,23 +1,23 @@
-#include<stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+
 /**
- *main - This is going to check for positivity only
- *Let me hope I got it right?
- *Return (0) Success
-*/
+ * main - will see positivity or negativity of integer n
+ * and if it is equal to 0 too.
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int n;
-if (n > 0)
-{
-printf("%d is positive \n", n);
-}
-else if (n == 0)
-{
-printf("%d is zero \n", n);
-}
-else
-{
-printf("%d is negative \n", n);
-}
-return (0);
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	return (0);
 }
