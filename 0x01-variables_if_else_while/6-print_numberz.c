@@ -1,7 +1,10 @@
 #include<stdio.h>
 
 /**
- * main - printing digits
+ * main - Entry point
+ *
+ * Description: print 0-9 using putchar
+ *              while using int variable
  *
  * Return: Always 0 (Success)
 */
@@ -12,7 +15,8 @@ int main(void)
 
 	while (digit <= 9)
 	{
-		tchar(digit + '0');
+		/*convert digit to ASCII representation*/
+		putchar(digit + '0');
 		++digit;
 	}
 	putchar('\n');
