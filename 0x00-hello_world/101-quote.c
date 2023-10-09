@@ -1,14 +1,13 @@
-#include <unistd.h> // Include for the write function
+#include <unistd.h>
 
 /**
  * main - Entry point
  * Return: 0 succesful
 */
-int main() {
-    const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    
-    // Using the write function to print to standard error (file descriptor 2)
-    write(2, message, 60);
-
-    return 1;
+int main(void)
+{
+const char *message = "and that piece of art is useful\" - Dora Korpar,
+2015-10-19\n";
+write(2, message, 60);
+return (1);
 }
