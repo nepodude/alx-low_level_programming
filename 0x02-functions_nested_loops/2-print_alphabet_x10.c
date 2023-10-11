@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_10 - this is an outstanding function
+ * print_alphabet_x10 - this is an outstanding function
  * The character to print
  * Return: On success be happy.
  */
