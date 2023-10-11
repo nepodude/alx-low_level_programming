@@ -12,5 +12,4 @@ for (int chara = 97; chara <= 97 + 25; chara++)
 _putchar(chara);
 }
 _putchar('\n');
-return (0);
 }
