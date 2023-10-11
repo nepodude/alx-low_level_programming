@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - this is an outstanding function
+ * print_alphabet_10 - this is an outstanding function
  * The character to print
  * Return: On success be happy.
  */
@@ -15,6 +15,7 @@ for (chara = 'a'; chara <= 'z'; chara++)
 {
 _putchar(chara);
 }
+_putchar('\n')
 i++;
 }
 _putchar('\n');
