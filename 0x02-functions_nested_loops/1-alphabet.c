@@ -5,7 +5,7 @@
  * The character to print
  * Return: On success 1.
  */
-int main(void)
+void print_alphabet(void);
 {
 for (int chara = 97; chara <= 97 + 25; chara++)
 {
