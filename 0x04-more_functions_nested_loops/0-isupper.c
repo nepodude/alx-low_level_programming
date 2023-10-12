@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _islower - this is an outstanding function
+ * _isupper - this is an outstanding function
  * @c: char type letter
  * Return: 1 if lowercase, 0 if no lower case
  */
-int _islower(int c)
+int _isupper(int c)
 {
 if (c >= 'A' && c <= 'Z')
 return (1);
