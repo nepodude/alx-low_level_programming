@@ -7,10 +7,9 @@
  */
 int _islower(int c)
 {
-if (islower(c) == TRUE)
+if (islower(c))
 {
 return (1);
 }
-else
 return (0);
 }
