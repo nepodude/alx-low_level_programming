@@ -15,17 +15,19 @@ counter++;
 if (counter % 2 == 0)
 {
 int mentor = counter / 2;
-for (; mentor <= counter; mentor++)
+while (mentor <= counter)
 {
 _putchar(str[mentor]);
+mentor++;
 }
 }
 else
 {
 int mentor  = (counter + 1) / 2;
-for (; mentor <= counter; mentor++)
+while (mentor <= counter)
 {
 _putchar(str[mentor]);
+mentor++;
 }
 }
 }
