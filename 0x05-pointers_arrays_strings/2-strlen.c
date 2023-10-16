@@ -11,5 +11,5 @@ while (s[counter] != '\0')
 {
 counter++;
 }
-return (counter + 1);
+return (counter);
 }
