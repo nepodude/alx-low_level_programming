@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * _puts - gonna print the thing
+ * puts_half - gonna print the thing
  * @str: is the input
  *
  */
 void puts_half(char *str)
 {
 int counter = 0;
-while (*str != '\0')
+while (str[counter] != '\0')
 {
 str++;
 counter++;
