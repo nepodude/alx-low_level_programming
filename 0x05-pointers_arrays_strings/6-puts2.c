@@ -14,9 +14,7 @@ counter++;
 counter--;
 for (; slicer <= counter; slicer += 2)
 {
-  if()
-  _putchar(*(str + slicer));
-
+_putchar(*(str + slicer));
 }
 _putchar('\n');
 }
