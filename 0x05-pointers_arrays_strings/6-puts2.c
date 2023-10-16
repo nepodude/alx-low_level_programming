@@ -7,7 +7,7 @@ void puts2(char *str)
 {
 int counter = 0;
 int slicer = 0;
-while (*str != '\0')
+while (str[counter] != '\0')
 {
 counter++;
 }
