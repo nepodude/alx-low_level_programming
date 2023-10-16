@@ -13,7 +13,7 @@ length++;
 }
 while (length - 1 >= 0)
 {
-_putchar(s[length]);
+_putchar(s[length - 1]);
 length--;
 }
 _putchar('\n');
