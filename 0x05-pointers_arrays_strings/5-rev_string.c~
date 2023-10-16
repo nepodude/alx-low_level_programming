@@ -1,0 +1,22 @@
+#include "main.h"
+/**
+ * 5-rev_string.c - gonna print the thing
+ * @s: is the input
+ *
+ */
+/* /\* VOID REV_STRING(CHAR *S) *\/ */
+/* /\* { *\/ */
+/* /\*   INT START = 0; *\/ */
+/* /\*   INT COUNTER = 0; *\/ */
+
+/* /\*   WHILE(*S != '\0') *\/ */
+/* /\*     { *\/ */
+/* /\*       START ++; *\/ */
+/* /\*     } *\/ */
+/* /\*   WHILE (COUNTER <= START-1) *\/ */
+/* /\*     { *\/ */
+/* /\*       S[COUNTER] = S[START -1 - COUNTER]; *\/ */
+/* /\* 	COUNTER++; *\/ */
+/* /\*     } *\/ */
+
+/* /\* } */ */
