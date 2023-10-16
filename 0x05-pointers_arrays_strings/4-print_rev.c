@@ -11,7 +11,7 @@ while (s[length] != '\0')
 {
 length++;
 }
-while (length >= 0)
+while (length - 1 >= 0)
 {
 _putchar(s[length]);
 length--;
