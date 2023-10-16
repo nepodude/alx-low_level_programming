@@ -12,9 +12,11 @@ while (str[counter] != '\0')
 counter++;
 }
 counter--;
-for (; slicer <= counter - 1; slicer += 2)
+for (; slicer <= counter; slicer += 2)
 {
-_putchar(*(str + slicer));
+  if()
+  _putchar(*(str + slicer));
+
 }
 _putchar('\n');
 }
