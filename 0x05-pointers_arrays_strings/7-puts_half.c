@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * puts_half - gonna print the thing
- * @str: is the input
- *
+ * puts_half - Prints the second half of a string.
+ * @str: The input string.
  */
 void puts_half(char *str)
 {
@@ -11,22 +10,19 @@ while (str[counter] != '\0')
 {
 counter++;
 }
+int mentor = 0;
 if (counter % 2 == 0)
 {
-int mentor = counter / 2;
-while (mentor <= counter)
-{
-_putchar(str[mentor]);
-mentor++;
-}
+mentor = counter / 2;
 }
 else
 {
-int mentor  = (counter + 1) / 2;
-while (mentor <= counter)
+mentor = (counter + 1) / 2;
+}
+while (str[mentor] != '\0')
 {
 _putchar(str[mentor]);
 mentor++;
 }
-}
+_putchar('\n');
 }
