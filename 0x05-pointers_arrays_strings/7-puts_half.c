@@ -6,11 +6,11 @@
 void puts_half(char *str)
 {
 int counter = 0;
+int mentor = 0;
 while (str[counter] != '\0')
 {
 counter++;
 }
-int mentor = 0;
 if (counter % 2 == 0)
 {
 mentor = counter / 2;
