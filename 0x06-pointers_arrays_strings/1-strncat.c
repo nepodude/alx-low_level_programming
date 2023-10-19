@@ -39,7 +39,7 @@ while (counter1 < n)
 *dest = *src;
 dest++;
 src++;
-counter1;
+counter1++;
 }
 }
 *dest = '\0';
