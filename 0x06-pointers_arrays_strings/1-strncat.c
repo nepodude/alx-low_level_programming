@@ -26,7 +26,6 @@ while (*src)
 dest++;
 src++;
 }
-*dest = '\0';
 }
 else
 {
@@ -34,13 +33,15 @@ while (*dest)
 {
 dest++;
 }
-while (n <= counter)
+int counter1 = 0;
+while (counter1 < n)
 {
 *dest = *src;
 dest++;
 src++;
-n++;
+counter1;
 }
 }
+*dest = '\0';
 return (s);
 }
