@@ -1,5 +1,5 @@
 #include "main.h"
-* _strcat - concatenating two  strings
+/** _strcat - concatenating two  strings
  * @dest:char input
  * @src:char input
  * Return:char out of the function
