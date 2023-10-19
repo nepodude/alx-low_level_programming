@@ -6,6 +6,7 @@
  */
 char *string_toupper(char *s)
 {
+char *beginning = s;
 while (*s != '\0')
 {
 if (*s >= 97 && *s <= 97 + 25)
@@ -14,5 +15,5 @@ if (*s >= 97 && *s <= 97 + 25)
 }
 s++;
 }
-return (s);
+return (beginning);
 }
