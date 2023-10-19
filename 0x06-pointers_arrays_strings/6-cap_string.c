@@ -1,4 +1,4 @@
- #include "main.h"
+#include "main.h"
 /**
  * cap_string - change a strin to all upper case.
  * @s: a string pointer input
@@ -7,6 +7,10 @@
 char *cap_string(char *s)
 {
 char *beginning = s;
+if (*s <= 'a' && *s <= 'z')
+{
+*s -= 32;
+}
 while (*s != '\0')
 {
 if (*s == ' ' || *s == '\t' || *s == '\n' || *s == ','
