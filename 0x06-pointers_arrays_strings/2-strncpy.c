@@ -1,23 +1,30 @@
 #include "main.h"
+
 /**
- * _strncpy - Concatenate the first n characters of string src to dest
- * @dest: Destination string
- * @src: Source string
- * @n: Number of characters to concatenate
- * Return: Pointer to the resulting string (dest)
+ * _strncpy - copies a string
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes to copy
+ *
+ * Return: pointer to the resulting string
  */
-char *_strncpy(char *dest, const char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
-int i = 0;
-while (src[i] != '\0' && i < n)
-{
-dest[i] = src[i];
-i++;
-}
-while (i < n)
-{
-dest[i] = '\0';
-i++;
-}
-return (dest);
+	int i;
+
+	i = 0;
+
+	while (src[i] != '\0' && i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+
+	return (dest);
 }
