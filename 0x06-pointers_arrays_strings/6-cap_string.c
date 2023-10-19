@@ -7,7 +7,7 @@
 char *cap_string(char *s)
 {
 char *beginning = s;
-if (*s <= 97 && *s <= 97 + 26)
+if (*s >= 97 && *s <= 97 + 26)
 {
 *s -= 32;
 }
