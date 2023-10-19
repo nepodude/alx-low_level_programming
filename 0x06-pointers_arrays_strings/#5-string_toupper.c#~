@@ -1,0 +1,10 @@
+#include "main.h"
+/**
+ * string_toupper - change a strin to all upper case.
+ * @s: a string pointer input
+ * I am just keeping this line for leisure hahaha.
+ */
+char *string_toupper(char *s)
+{
+  
+}
