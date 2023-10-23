@@ -13,13 +13,8 @@ while (*s != '\0')
 if (*s == 'c')
 {
 return (indicator);
-break;
 }
-else
-{
-continue;
-}
-return (NULL);
 s++;
 }
+return (NULL);
 }
