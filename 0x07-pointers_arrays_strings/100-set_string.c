@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * set_string - it changes valut to char  
  * @s: pointer to pointer we need to set to
