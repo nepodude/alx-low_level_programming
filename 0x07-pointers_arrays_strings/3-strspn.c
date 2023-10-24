@@ -18,6 +18,7 @@ if (s[i] == accept[j])
 counter++;
 break;
 }
+}
 if (accept[j] == '\0')
 break;
 }
