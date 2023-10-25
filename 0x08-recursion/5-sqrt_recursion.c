@@ -1,4 +1,14 @@
 #include "main.h"
+int helper(int n, int i);
+/**
+ *_sqrt_recursion - prints final thing
+ * @n: input integer.
+ * Return: returns integer squareroot
+ */
+int _sqrt_recursion(int n)
+{
+return (helper(n, 0));
+}
 /**
  * -helper - recursively find int sqrt
  * @n: input to find squareroot for.
@@ -19,13 +29,4 @@ int helper(int n, int i)
     {
       return (helper(n, i + 1));
     }
-}
-/**
- * _sqrt_recursion - recrusing now on n
- * @n: input integer.
- * Return: returns integer squareroot
- */
-int _sqrt_recursion(int n)
-{
-return (helper(n, 0));
 }
