@@ -12,6 +12,6 @@ if (*s)
 length++;
 s++;
 _strlen_recursion(s);
-}
 return (length);
+}
 }
