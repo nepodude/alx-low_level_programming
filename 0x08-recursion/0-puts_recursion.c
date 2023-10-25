@@ -9,7 +9,7 @@ if (*s == '\0')
 {
 _putchar ('\n');
 }
-if (*s != '\0')
+if
 {
 _putchar (s);
 s++;
