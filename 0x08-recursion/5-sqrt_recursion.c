@@ -34,4 +34,5 @@ int helper(int n, int i)
     {
       return (helper(n, i + 1));
     }
+  return (-1);
 }
