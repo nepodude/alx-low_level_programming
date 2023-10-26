@@ -11,7 +11,7 @@ int is_palindrome(char *s)
 return (helper(s, 0, string_length(s)  - 1));
 }
 /**
- * is_palindrome_helper - nice one to help
+ * helper - nice one to help
  * @s: input string
  * @start: start flat point
  * @end: end place number
