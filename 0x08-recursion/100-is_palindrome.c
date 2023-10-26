@@ -8,7 +8,7 @@ int string_length(char *s);
  */
 int is_palindrome(char *s)
 {
-return (helper(s, 0, string_length  - 1));
+return (helper(s, 0, string_length(s)  - 1));
 }
 /**
  * is_palindrome_helper - nice one to help
