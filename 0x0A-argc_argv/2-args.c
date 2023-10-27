@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - prints every argument
  * @argc: number of arguments
@@ -8,7 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-for (int i = 0; i < argc; i++)
+int i;
+for (i = 0; i < argc; i++)
 {
 printf("%d\n", argv[i]);
 }
