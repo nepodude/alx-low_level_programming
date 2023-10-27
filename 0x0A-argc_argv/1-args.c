@@ -6,7 +6,7 @@
  *
  * Return: 0 on success
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] --attribute-- ((unused)))
 {
 if (argc > 0)
 {
