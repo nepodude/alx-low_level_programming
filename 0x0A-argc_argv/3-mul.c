@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 /**
  * _atoi - acts like real function atoi
