@@ -9,7 +9,7 @@ int _atoi(char *s)
 {
 int result = 0;
 int sn = 1;
-int final = result * sn;
+int final;
 if (*s == '-')
 {
 sn = -1;
@@ -20,6 +20,7 @@ while (*s >= '0' && *s <= '9')
 result = result * 10 + (*s - '0');
 s++;
 }
+final = result * sn;
 return (final);
 }
 /**
