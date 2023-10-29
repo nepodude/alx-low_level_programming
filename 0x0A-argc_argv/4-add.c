@@ -51,7 +51,6 @@ i++;
 }
 int sum = 0;
 int counter = 1;
-int num __attribute__((unused));
 while (counter < argc)
 {
 sum += _atoi(argv[counter]);
