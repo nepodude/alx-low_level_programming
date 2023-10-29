@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
 /**
  * _atoi - acts like real function atoi
  * @s: input
