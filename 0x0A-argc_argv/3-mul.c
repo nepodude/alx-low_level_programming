@@ -19,7 +19,7 @@ while (*s >= '0' && *s <= '9')
 result = result * 10 + (*s - '0');
 s++;
 }
-return (result  sn);
+return (result *sn);
 }
 /**
  * main - multiplies two numbers
