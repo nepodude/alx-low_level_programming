@@ -41,8 +41,10 @@ while (i < argc)
 while (*argv[i] != '\0')
 {
 if (*argv[i] < '0' || *argv[i] > '9')
+{
 printf("Error\n");
 return (1);
+}
 argv[i]++;
 }
 i++;
@@ -52,7 +54,7 @@ int counter = 1;
 int num __attribute__((unused));
 while (counter < argc)
 {
-sum += _atoi(argv[i]);
+sum += _atoi(argv[counter]);
 counter++;
 }
 printf("%d\n", sum);
