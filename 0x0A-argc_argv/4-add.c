@@ -30,12 +30,14 @@ return (result *sn);
  */
 int main(int argc, char *argv[])
 {
+int i = 1;
+int sum = 0;
+int counter = 1;
 if (argc == 1)
 {
 printf("0\n");
 return (0);
 }
-int i = 1;
 while (i < argc)
 {
 while (*argv[i] != '\0')
@@ -52,8 +54,6 @@ argv[i]++;
 }
 i++;
 }
-int sum = 0;
-int counter = 1;
 while (counter < argc)
 {
 sum += _atoi(argv[counter]);
