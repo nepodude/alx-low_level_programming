@@ -45,7 +45,10 @@ if (*argv[i] < '0' || *argv[i] > '9')
 printf("Error\n");
 return (1);
 }
+else
+{
 argv[i]++;
+}
 }
 i++;
 }
