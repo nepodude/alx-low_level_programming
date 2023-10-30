@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-int remainder1, remainder2, reaminder3, remainder4, answer;
+int remainder1, remainder2, remainder3, remainder4, answer;
 remainder1 = atoi(argv[1]) % 25;
 remainder2 = remainder1 % 10;
 remainder3 = remainder2 % 5;
