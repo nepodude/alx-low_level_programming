@@ -40,16 +40,17 @@ return (0);
 }
 while (i < argc)
 {
-while (*argv[i] != '\0')
+char *arg = argv[i];
+while (*arg != '\0')
 {
-if (*argv[i] < '0' || *argv[i] > '9')
+if (*arg < '0' || *arg > '9')
 {
 printf("Error\n");
 return (1);
 }
 else
 {
-argv[i]++;
+arg++;
 }
 }
 i++;
