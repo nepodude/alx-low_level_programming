@@ -24,7 +24,7 @@ if (argv[1] < 0)
 printf("0\n");
 return (0);
 }
-answer = remainder1 + remainder2 + remainder3 + remainder4;
+answer = remainder1 / 25 + remainder2  / 10 + remainder3 / 5 + remainder4;
 printf("%d\n", answer);
 return (0);
 }
