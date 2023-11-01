@@ -19,9 +19,11 @@ if (s2 != NULL)
 second = strlen(s2);
 x = first + second + 1;
 newstring = malloc(x *sizeof(char));
+if (newstring == NULL)
+return (NULL);
 if (s1 != NULL)
 strcpy(newstring, s1);
 if (s2 != NULL)
-strcpy(newstring, s2);
+strcpy(newstring + first, s2);
 return (newstring);
 }
