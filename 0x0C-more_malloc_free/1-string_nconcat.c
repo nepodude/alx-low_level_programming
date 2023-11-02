@@ -30,34 +30,25 @@ if (n >= len2)
 {
 s3 = malloc(len1 + len2 + 1);
 if (s3 == NULL)
-{
 return (NULL);
 }
 else
-{
-for (i = 0; i < len1; i++)
-s3[i] = s1[i];
-for (j = 0; j < len2; j++)
-s3[i + j] = s2[j];
-s3[i + j] = '\0';
-return (s3);
-}
-}
-if (n < len2)
 {
 s3 = malloc(len1 + n + 1);
 if (s3 == NULL)
-{
 return (NULL);
+len2 = n;
 }
-else
+while (i < len1)
 {
-for (i = 0; i < len1; i++)
 s3[i] = s1[i];
-for (j = 0; j < n; j++)
+i++;
+}
+while (j < len2)
+{
 s3[i + j] = s2[j];
+j++;
+}
 s3[i + j] = '\0';
 return (s3);
-}
-}
 }
