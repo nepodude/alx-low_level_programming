@@ -52,7 +52,7 @@ for (i = 0; i < len1; i++)
 s3[i] = s1[i];
 for (j = 0; j < n; j++)
 s3[i + j] = s2[j];
-s3[i + j + 1] = '\0';
+s3[i + j] = '\0';
 return (s3);
 }
 }
