@@ -16,16 +16,10 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-while (*s1)
-{
+while (s1[len1] != '\0')
 len1++;
-s1++;
-}
-while (*s2)
-{
+while (s2[len2] != '\0')
 len2++;
-s2++;
-}
 if (n >= len2)
 {
 s3 = malloc(len1 + len2 + 1);
