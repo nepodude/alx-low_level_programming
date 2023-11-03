@@ -10,10 +10,10 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+void *new_ptr;
 char *src = ptr;
 char *dst = new_ptr;
 unsigned int min_size;
-void *new_ptr;
 if (old_size == new_size)
 return (ptr);
 if (ptr == NULL)
@@ -31,7 +31,7 @@ if (new_ptr)
 {
 if (old_size < new_size)
 {
-in_size = old_size;
+min_size = old_size;
 }
 else
 {
