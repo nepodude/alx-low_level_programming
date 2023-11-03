@@ -10,7 +10,7 @@
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-void *new_ptr;
+char *new_ptr;
 char *src = ptr;
 char *dst;
 unsigned int min_size;
