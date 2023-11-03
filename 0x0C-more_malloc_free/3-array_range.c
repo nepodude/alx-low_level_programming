@@ -10,13 +10,14 @@
 int *array_range(int min, int max)
 {
 int *tester;
+int i;
 if (min > max)
 return (NULL);
 tester = malloc(sizeof(int) * (max - min + 1));
 if (tester == NULL)
 return (NULL);
 else
-for (int i = 0; i <= max - min; i++)
+for (i = 0; i <= max - min; i++)
 tester[i] = i + min;
 return (tester);
 }
