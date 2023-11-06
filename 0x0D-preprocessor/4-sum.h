@@ -1,5 +1,5 @@
-#ifndef ABSOLUTE_VALUE_H
-#define ABSOLUTE_VALUE_H
+#ifndef absolutevalue
+#define absolutevalue
 
 #define SUM(x, y)((x) + (y))
 
