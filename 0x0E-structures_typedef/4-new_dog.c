@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <dog.h>
 
-#include "main.h"
 /**
  * _strlen - check the code
  * @s: input
@@ -17,8 +15,6 @@ counter++;
 }
 return (counter);
 }
-
-#include "main.h"
 
 /**
  * char *_strcpy - this is a thing that copies the string pointed to by src
