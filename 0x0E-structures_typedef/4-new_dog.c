@@ -2,40 +2,43 @@
 #include <stdlib.h>
 #include <string.h>
 #include <dog.h>
-dog_t *new_dog(char *name, float age, char *owner) {
-    dog_t *newDog;
-    char *newName, *newOwner;
+/**
+ * new_dog - creates new frind dog hahaha
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ * Return: pointer to new dog on success
+ */
+dog_t *new_dog(char *name, float age, char *owner)
+{
+    dog_t *dog;
+    int i, j;
 
-    newDog = malloc(sizeof(dog_t));
-    if (newDog == NULL)
-        return NULL;
+    i = strlen(name);
+    j = strlen(owner);
 
-    if (name != NULL) {
-        newName = malloc(strlen(name) + 1);
-        if (newName == NULL) {
-            free(newDog);
-            return NULL;
-        }
-        strcpy(newName, name);
-    } else {
-        newName = NULL;
+    dog = malloc(sizeof(dog_t));
+    if (dog == NULL)
+        return (NULL);
+
+    dog->name = malloc(sizeof(char) * (i + 1));
+    if (dog->name == NULL)
+    {
+        free(dog);
+        return (NULL);
     }
 
-    if (owner != NULL) {
-        newOwner = malloc(strlen(owner) + 1);
-        if (newOwner == NULL) {
-            free(newName);
-            free(newDog);
-            return NULL;
-        }
-        strcpy(newOwner, owner);
-    } else {
-        newOwner = NULL;
+    dog->owner = malloc(sizeof(char) * (j + 1));
+    if (dog->owner == NULL)
+    {
+        free(dog->name);
+        free(dog);
+        return (NULL);
     }
 
-    newDog->name = newName;
-    newDog->age = age;
-    newDog->owner = newOwner;
+    strcpy(dog->name, name);
+    strcpy(dog->owner, owner);
+    dog->age = age;
 
-    return newDog;
+    return (dog);
 }
