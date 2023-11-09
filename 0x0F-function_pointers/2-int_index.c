@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <stdio.h>
 
 /**
  * int_index - searches for an integer
@@ -7,7 +6,7 @@
  * @size: size of the array
  * @cmp: pointer to function to use in compiling
  *
- * Return: index of the first element for which
+ * Return: index of the first element shen
  * the cmp function does not return 0, or -1 if no match is found
  * or size is negative
  */
