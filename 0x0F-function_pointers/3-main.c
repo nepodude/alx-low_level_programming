@@ -19,7 +19,7 @@ exit(98);
 arg1 = atoi(argv[1]);
 arg2 = atoi(argv[3]);
 function = get_op_func(argv[2]);
-if (!funcion)
+if (!function)
 {
 printf("Error\n");
 exit(99);
