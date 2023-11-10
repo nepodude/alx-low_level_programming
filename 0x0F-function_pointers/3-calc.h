@@ -1,5 +1,5 @@
-#ifndef SIMPLE_CALCULATOR_H
-#define SIMPLE_CALCULATOR_H
+#ifndef CALC_H
+#define CALC_H
 
 #include <stdlib>
 #include <string.h>
@@ -21,8 +21,8 @@ int (*get_op_func(char *s))(int, int);
  */
 typedef struct op
 {
-    char *op;
-    int (*f)(int a, int b);
+char *op;
+int (*f)(int a, int b);
 } op_t;
 
 #endif
