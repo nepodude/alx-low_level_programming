@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "lists.h"
 /**
  * list_len - prints number of nodes
  * @h: input list
