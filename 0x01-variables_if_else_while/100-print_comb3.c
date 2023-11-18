@@ -1,24 +1,22 @@
 #include <stdio.h>
 /**
- * main - function that sucs
- * printing combination of digits 
- * return 0: success
+ * main - function that prints distinct combinations of digits
+ * in increasing order and and 11, 22,.. are not allowed hahaha.
+ * Return: 0 for success
 */
 int main(void)
 {
-int x = 0;
-for (; x <= 9; x++)
-{
-for (int y = x + 1; y <= 9; y++)
-{
-if (x != y)
-{
-putchar(x + 48);
-putchar(y + 48);
-putchar(',');
-putchar(' ');
-}
-}
-}
-return (0);
+	int x, y;
+
+	for (x = 0; x <= 9; x++)
+	{
+		for (y = x + 1; y <= 9; y++)
+		{
+			putchar(x + 48);
+			putchar(y + 48);
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	return (0);
 }
