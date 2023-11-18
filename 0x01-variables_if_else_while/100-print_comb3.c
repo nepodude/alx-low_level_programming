@@ -14,6 +14,7 @@ int main(void)
 		{
 			putchar(x + 48);
 			putchar(y + 48);
+			if (x != 8)
 			putchar(',');
 			putchar(' ');
 		}
