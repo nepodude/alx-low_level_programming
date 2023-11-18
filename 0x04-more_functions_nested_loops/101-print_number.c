@@ -4,7 +4,6 @@
  * @n:.input integer parameter
  *
  *No return in this function
-
  */
 void print_number(int n)
 {
