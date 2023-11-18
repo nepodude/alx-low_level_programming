@@ -1,17 +1,18 @@
 section .data
-    hello db 'Hello, Holberton', 0Ah, 0
+    format db 'Hello, Holberton', 0Ah, 0
 
 section .text
-    global _start
+    global main
+    extern printf
 
-_start:
+main:
     ; call printf function
     push rbp
     mov rbp, rsp
-    mov edi, hello
-    mov eax, 0
+    mov edi, format
+    xor eax, eax
     call printf
-    mov eax, 1
-    xor edi, edi
-    syscall
+    mov eax, 0
+    pop rbp
+    ret
 
