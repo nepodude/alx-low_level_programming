@@ -12,16 +12,16 @@ int main(void)
 	{
 		for (y = x + 1; y <= 9; y++)
 		{
-			for (z = 0; z <= 9; z++)
+			for (z = y + 1; z <= 9; z++)
 			{
-				 putchar(x + 48);
-				 putchar(y + 48);
-				 putchar(z + 48);
-				 if (x != 7)
-				 {
-					 putchar(',');
-					 putchar(' ');
-				 }
+				putchar(x + 48);
+				putchar(y + 48);
+				putchar(z + 48);
+				if (x != 7)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
