@@ -6,7 +6,7 @@
  * main - prints a random password
  * Return: 0 on success.
  */
-char* main(void)
+int main(void)
 {
 	const char possibilities[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMKNOPQRSTUVWXYZ0123456789";
 	char password[10 + 1];
@@ -19,5 +19,5 @@ char* main(void)
 	}
 
 	printf("%s", password);
-	return ("Tada! Congrats");
+	return (0);
 }
