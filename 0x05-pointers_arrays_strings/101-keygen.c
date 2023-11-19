@@ -9,7 +9,7 @@
 int main(void)
 {
 	const char possibilities[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMKNOPQRSTUVWXYZ0123456789";
-	char password[10 + 1];
+	char password[11];
 	unsigned int i = 0;
 
 	srand(time(NULL));
@@ -17,7 +17,7 @@ int main(void)
 	{
 		password[i] = possibilities[rand() % (sizeof(possibilities) - 1)];
 	}
-
+	password[11] = NULL;
 	printf("%s", password);
 	return (0);
 }
