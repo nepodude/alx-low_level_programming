@@ -2,13 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
-char *passwords(void);
-
 /**
  * main - prints a random password
  * Return: 0 on success.
  */
-char *passwords(void)
+char* main(void)
 {
 	const char possibilities[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMKNOPQRSTUVWXYZ0123456789";
 	char password[10 + 1];
