@@ -17,7 +17,7 @@ int main(void)
 	{
 		password[i] = possibilities[rand() % (sizeof(possibilities) - 1)];
 	}
-	password[10] = NULL;
+	password[10] = '\0';
 	printf("%s", password);
 	return (0);
 }
