@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define(PASSWORD_LENGTH) = (10)
 
 /**
  * main - prints a random password
@@ -10,13 +9,12 @@
  */
 int main(void)
 {
-	const char possibilities[] = "abcdefghijklmnopqrstuvwxyz
-		ABCDEFGHIJKLMKNOPQRSTUVWXYZ0123456789";
-	char password[PASSWORD_LENGTH + 1];
+	const char possibilities[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMKNOPQRSTUVWXYZ0123456789";
+	char password[10 + 1];
 	unsigned int i = 0;
 
 	srand(time(NULL));
-	for (; i < PASSWORD_LENGTH; i++)
+	for (; i < 11; i++)
 	{
 		password[i] = possibities[rand() % (sizeof(possibilities) - 1)];
 	}
