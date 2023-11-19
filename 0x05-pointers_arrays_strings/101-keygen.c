@@ -16,7 +16,7 @@ int main(void)
 	srand(time(NULL));
 	for (; i < 11; i++)
 	{
-		password[i] = possibities[rand() % (sizeof(possibilities) - 1)];
+		password[i] = possibilities[rand() % (sizeof(possibilities) - 1)];
 	}
 
 	printf("%s", password);
