@@ -1,90 +1,77 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * reverse_array - reverses an array of length n
- * @s: an array of integers input
- * @n: length of an array
- * Return: char pointer to result.
+ * rev_string - reverse array
+ * @n: integer params
+ * Return: 0
  */
 
-char *reverse_array(int *s, int n)
+void rev_string(char *n)
 {
 	int i = 0;
-	int k = n / 2;
+	int j = 0;
+	char temp;
 
-	while (i < k && n > 0)
+	while (*(n + i) != '\0')
 	{
-		int j = s[i];
-
-		s[i] = s[n - 1 - i];
-		s[n - 1 - i] = j;
 		i++;
 	}
-	return (a);
+		i--;
+	for (j = 0; j < i; j++, i--)
+	{
+		temp = *(n + j);
+		*(n + j) = *(n + i);
+		*(n + i) = temp;
+	}
 }
 
 /**
- * infinite_add - adds insanely big numbers.
- * @n1: number one as a string.
- * @n2: number two as a string.
- * @r: buffer to store stuffs
- * @size_r: size of our buffer.
- * Return: char pointer to the result.
+ * infinite_add - add 2 numbers together
+ * @n1: text representation of 1st number to add
+ * @n2: text representation of 2nd number to add
+ * @r: pointer to buffer
+ * @size_r: buffer size
+ * Return: pointer to calling function
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int remainder_past, a, total_current, total_past, counter = 0;
-	int len1 = strlen(n1);
-	int len1 = strlen(n2);
-	int len = len1 > len2 ? len1 : len2;
-	char *pointer_to_result = r;
+	int overflow = 0, i = 0, j = 0, digits = 0;
+	int val1 = 0, val2 = 0, temp_tot = 0;
 
-	if (len > size_r)
+	while (*(n1 + i) != '\0')
+		i++;
+	while (*(n2 + j) != '\0')
+		j++;
+		i--;
+		j--;
+	if (j >= size_r || i >= size_r)
 		return (0);
-	for (; counter < len; counter ++, len1--, len2--)
+	while (j >= 0 || i >= 0 || overflow == 1)
 	{
-		if (len1 >= 0 && len2 > 0 && counter == 1)
-		{
-			total_current = atoi(n1[len1]) + atoi(n2[len2]);
-			a = total_current % 10;
-			r[counter - 1] = a;
-		}
-		if (len1 > 0 && len2 > 0 && counter > 1)
-		{
-			total_past = atoi(n1[len1 + 1] + atoi(n2[len2 + 1]);
-			remainder_past = total_past / 10;
-			total_current = atoi(n1[len1]) + atoi(n2[len2]) + remainder_past;
-			a = total_current % 10;
-			r[counter] = a;
-		}
-		if (len1 >= 0 && len2 < 0)
-		{
-			if (len2 == -1)
-				total_past =  atoi(n1[len1 + 1] + atoi(n2[0]);
+		if (i < 0)
+			val1 = 0;
 			else
-			{
-				total_past = atoi(n1[len1 + 1];
-				remainder_past = total_past / 10;
-				total_current = atoi(n1[len1]) + 0 + remainder_past;
-				a = total_current % 10;
-				r[counter] = a
-			}
-		}
-		if (len1 < 0 && len2 > 0)
-		{
-			if (len1 == -1)
-				total_past =  atoi(n1[len1 + 1] + atoi(n1[0]);
-			else
-			{
-				total_past = atoi(n2[len2 + 1];
-				remainder_past = total_past / 10;
-				total_current = atoi(n2[len2]) + 0 + remainder_past;
-				a = total_current % 10;
-				r[counter] = a
-			}
-		}
+			val1 = *(n1 + i) - '0';
+		if (j < 0)
+			val2 = 0;
+		else
+			val2 = *(n2 + j) - '0';
+			temp_tot = val1 + val2 + overflow;
+		if (temp_tot >= 10)
+			overflow = 1;
+		else
+			overflow = 0;
+		if (digits >= (size_r - 1))
+			return (0);
+		*(r + digits) = (temp_tot % 10) + '0';
+			digits++;
+			j--;
+			i--;
 	}
-	return (pointer_to_result);
+	if (digits == size_r)
+		return (0);
+	*(r + digits) = '\0';
+		rev_string(r);
+	return (r);
 }
