@@ -1,8 +1,6 @@
 #include "main.h"
 #include <string.h>
 
-unsigned int powering (unsigned int a,unsigned int b);
-
 /**
  * binary_to_unit - returns an equivalent number in decimal.
  * @b: an input pointer that will point to whatever the first character of
@@ -29,5 +27,5 @@ unsigned int binary_to_uint(const char *b)
 	{
 		result += (temp[helper] - '0') * powering(2, (length - helper - 1));
 	}
-	return(result);
+	return (result);
 }

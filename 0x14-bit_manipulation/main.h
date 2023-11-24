@@ -19,7 +19,7 @@ int get_endianness(void);
 static inline unsigned int powering(unsigned int a, unsigned int b)
 {
 	unsigned int answer = 1;
-	
+
 	for (; b > 0; b--)
 	{
 		answer *= a;
