@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * binary_to_unit - returns an equivalent number in decimal.
+ * binary_to_uint - returns an equivalent number in decimal.
  * @b: an input pointer that will point to whatever the first character of
  * input string is.
  * Return: unsigned int output after computation.
