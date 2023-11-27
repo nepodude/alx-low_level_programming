@@ -9,12 +9,12 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	if (index < 64 && (*n - powering(2, index) >= 0))
+	if (((*n >> index) & 1) && (index < 64))
 	{
 		*n -= powering(2, index);
 		return(1);
 	}
-	if (*n - powering (2, index) < 0)
-		return;
+	if (!((*n >> index) & 1))
+		return (1);
 	return (-1);
 }
