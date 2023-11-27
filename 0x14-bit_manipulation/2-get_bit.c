@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * get_bit - prints a bit an some index.
@@ -10,19 +9,7 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int length = 0;
-	unsigned long int copy = n;
-
-	while (copy > 0)
-	{
-		copy >>= 1;
-		length++;
-	}
-	if (index > length - 1)
-		return (-1);
-
-	if (n > 0)
-		return (n >>= (length - index + 1) & 1);
+	if (index < 64)
+		return (n >> index & 1);
 	return (-1);
-
 }
