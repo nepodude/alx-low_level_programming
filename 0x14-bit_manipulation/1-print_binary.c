@@ -9,12 +9,15 @@
 void print_binary(unsigned long int n)
 {
 	int length = 0;
+	unsigned long int copy = n;
+	unsigned long int keeper = n;
+
 
 	if (n == 0)
 		printf("0");
-	while (n >= 1)
+	while (copy > 0)
 	{
-		n >>= 1;
+		copy >>= 1;
 		length++;
 	}
 
@@ -24,5 +27,6 @@ void print_binary(unsigned long int n)
 			printf("1");
 		else
 			printf("0");
+		n = keeper;
 	}
 }
