@@ -18,24 +18,24 @@ void print_buffer(char *b, int size)
 		for (j = 0, k = 0; j <= 9 && i + j < size; k++, j++)
 		{
 			if (k % 2 == 0)
-				printf(" ");	
+				printf(" ");
 			printf("%02x", b[i + j]);
 			if (k == 9)
-				printf (" ");
+				printf(" ");
 		}
 		if (i + j >= size && size % 10 != 0)
 		{
 			space = (5 * (10 - (size % 10)) + 2) / 2;
 			while (space > 0)
 			{
-				printf (" ");
+				printf(" ");
 				space--;
 			}
 		}
 		for (j = 0; j < 10 && i + j < size; j++)
 		{
 			if (b[i + j] >= ' ' && b[i + j] <= '~')
-				printf ("%c", b[i + j]);
+				printf("%c", b[i + j]);
 			else
 				printf(".");
 		}
