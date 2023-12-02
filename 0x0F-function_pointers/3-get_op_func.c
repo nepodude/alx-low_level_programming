@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "3-calc.h"
-#include <string.h>
 
 /**
  * get_op_func - takes a string and then returns the corresponding function
@@ -20,11 +18,14 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 	int i;
+	
+	i = 0;
 
-	for (i = 0; i < 5; i++)
+	while (ops[i].op)
 	{
 		if (strcmp(ops[i].op, s) == 0)
 			return (ops[i].f);
+		i++;
 	}
 	return (NULL);
 }
