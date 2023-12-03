@@ -10,12 +10,12 @@ void print_all(const char * const format, ...)
 	int i, helper;
 	float f;
 	char *s, c;
-	
-	va_start (argument, format);
+
+	va_start(argument, format);
 	helper = 0;
 	while (format[helper])
 	{
-		switch(format[helper])
+		switch (format[helper])
 		{
 			case 'c':
 				c = va_arg(argument, int);
@@ -26,11 +26,11 @@ void print_all(const char * const format, ...)
 				printf("%d, ", i);
 				break;
 			case 'f':
-				f =(float)va_arg(argument, double);
+				f = (float) va_arg(argument, double);
 				printf("%f, ", f);
 				break;
 			case 's':
-				s = va_arg (argument, char *);
+				s = va_arg(argument, char *);
 				if (s == NULL)
 					printf("(nil)");
 				else
