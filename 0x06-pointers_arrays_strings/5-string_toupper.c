@@ -16,4 +16,4 @@ if (*s >= 97 && *s <= 97 + 25)
 s++;
 }
 return (beginning);
-}
+} 
