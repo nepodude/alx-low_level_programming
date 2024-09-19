@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * delete_nodeint_at_index - deletes the hell out of it haha.
@@ -21,6 +22,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	temp = *head;
 	free(*head);
 	*head = temp;
-	*head->next = temp->next;
+	(*head)->next = temp->next;
 	return (1);
 }

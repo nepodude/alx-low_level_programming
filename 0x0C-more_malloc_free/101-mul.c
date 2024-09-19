@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+int main(int argc, char *argv[]);
+int is_number(char *s);
 /*
  * is_number - checkes of a string is composed of digits only.
  * @s: input string to check
@@ -30,7 +32,7 @@ int is_number(char *s)
 int main(int argc, char *argv[])
 {
 	int num1, num2;
-	
+
 	if (argc != 3 || !is_number(argv[1]) || !is_number(argv[2]))
 	{
 		printf("Error\n");
