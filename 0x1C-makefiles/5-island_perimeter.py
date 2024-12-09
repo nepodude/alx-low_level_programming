@@ -71,7 +71,7 @@ def shortner(array):
         return array[0]
 
     if all(element == 1 for element in array):
-        return 1
+        return 2
 
     for item in array:
         if helper == 0 and item == 1 and array[1] == 0:
