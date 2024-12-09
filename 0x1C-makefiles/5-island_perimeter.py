@@ -66,7 +66,6 @@ def island_perimeter(grid):
 def shortner(array):
     power_of_array = 0
     helper = 0
-    sum = 0
 
     if len(array) == 1:
         return array[0]
@@ -75,9 +74,13 @@ def shortner(array):
         return 1
 
     for item in array:
-        if helper == 0 and (item == 1 and array[helper + 1] == 0):
+        if helper == 0 and item == 1 and array[1] == 0:
+            power_of_array += 2
+        if helper == 0 and item == 1 and array[1] == 1:
             power_of_array += 1
-        if helper == len(array) - 1 and (item == 1 and array[helper - 1] == 0):
+        if helper == len(array) - 1 and item == 1 and array[helper - 1] == 0:
+            power_of_array += 2
+        if helper == len(array) - 1 and item == 1 and array[helper - 1] == 1:
             power_of_array += 1
         if (
             0 < helper < len(array) - 1
