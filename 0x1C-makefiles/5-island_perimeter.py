@@ -37,7 +37,7 @@ def island_perimeter(grid):
                     perimeter += 2
 
             if 0 < counter < len_grid - 1:
-                if(
+                if (
                     element == 1
                     and grid[counter - 1][semi_counter] == 1
                     and grid[counter + 1][semi_counter] == 0
@@ -49,7 +49,7 @@ def island_perimeter(grid):
                     and grid[counter + 1][semi_counter] == 1
                 ):
                     perimeter += 1
-                if(
+                if (
                     element == 1
                     and grid[counter - 1][semi_counter] == 0
                     and grid[counter + 1][semi_counter] == 0
