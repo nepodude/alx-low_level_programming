@@ -50,4 +50,4 @@ def island_perimeter(grid):
 
         counter += 1
     perimeter += 2 * (counted)
-    return [perimeter, counted]
+    return perimeter
