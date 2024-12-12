@@ -1,0 +1,20 @@
+CC = gcc
+SRC = main.c school.c
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
+RM = rm -f
+
+all:
+	$(CC) $(CFLAGS) $(SRC)-o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	@for file in $(SRC:.c=.o); do $(RM) $$file; done
+
+fclean: clean oclean
+
+re: fclean all
+
+$(NAME): m.h
